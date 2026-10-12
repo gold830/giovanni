@@ -1,783 +1,499 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DJ Trizzy Vibes | DJ • Radio • Television • Events</title>
+    <title>Deejay Giovanni — Sound With Purpose</title>
 
-    <meta
-        name="description"
-        content="DJ Trizzy Vibes — club DJ, event DJ, Galaxy FM 100.2 personality and NTV talent."
-    >
+    <meta name="description" content="Official website of Deejay Giovanni — gospel DJ, Christian artist, rapper and performer from Uganda.">
+
+    <meta name="theme-color" content="#111110">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =========================================================
-     PRELOADER
-========================================================= -->
-
+<!-- LOADER -->
 <div class="loader">
     <div class="loader-inner">
-        <span>TRIZZY</span>
-        <span>VIBES</span>
+        <span>G</span>
+        <div class="loader-line"><i></i></div>
+        <small>DEEJAY GIOVANNI</small>
     </div>
-
-    <div class="loader-line"></div>
 </div>
 
-
-<!-- =========================================================
-     CUSTOM CURSOR
-========================================================= -->
-
+<!-- CUSTOM CURSOR -->
 <div class="cursor"></div>
-<div class="cursor-follower"></div>
+<div class="cursor-ring"></div>
 
+<!-- HEADER -->
+<header class="header">
 
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
-
-<header class="navbar">
-
-    <a href="#home" class="logo">
-        <span>DJ</span>
-        TRIZZY VYBZ
+    <a href="index.html" class="logo" aria-label="Deejay Giovanni home">
+        <span class="logo-symbol">G</span>
+        <span class="logo-name">DEEJAY<br>GIOVANNI</span>
     </a>
 
-    <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#media">Media</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#booking">Bookings</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html" class="active"><span>*</span> HOME</a>
+        <a href="music.html"><span>*</span> MUSIC</a>
+        <a href="mixes.html"><span>*</span> MIXES</a>
+        <a href="events.html"><span>*</span> EVENTS</a>
+        <a href="about.html"><span>*</span> STORY</a>
     </nav>
 
-    <a href="#booking" class="nav-book">
-        BOOK DJ
-        <i class="ri-arrow-right-up-line"></i>
-    </a>
+    <a href="booking.html" class="header-book">Book Giovanni <span>↗</span></a>
 
-    <button class="menu-toggle">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
     </button>
 
 </header>
 
-
-<!-- =========================================================
-     MOBILE MENU
-========================================================= -->
-
+<!-- MOBILE MENU -->
 <div class="mobile-menu">
+    <div class="mobile-menu-number">01 — 06</div>
 
-    <div class="mobile-menu-inner">
+    <nav aria-label="Mobile navigation">
+        <a href="index.html"><span>*</span> HOME</a>
+        <a href="music.html"><span>*</span> MUSIC</a>
+        <a href="mixes.html"><span>*</span> MIXES</a>
+        <a href="events.html"><span>*</span> EVENTS</a>
+        <a href="about.html"><span>*</span> STORY</a>
+        <a href="booking.html" class="mobile-book">Book Giovanni ↗</a>
+    </nav>
 
-        <span class="mobile-label">DJ TRIZZY VIBES</span>
-
-        <a href="#about">01 / ABOUT</a>
-        <a href="#media">02 / MEDIA</a>
-        <a href="#events">03 / EVENTS</a>
-        <a href="#gallery">04 / GALLERY</a>
-        <a href="#booking">05 / BOOKINGS</a>
-
-        <div class="mobile-socials">
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-tiktok-line"></i></a>
-            <a href="#"><i class="ri-youtube-line"></i></a>
-        </div>
-
+    <div class="mobile-socials">
+        <a href="#" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="#" target="_blank" rel="noopener">YouTube ↗</a>
+        <a href="#" target="_blank" rel="noopener">TikTok ↗</a>
     </div>
-
 </div>
-
 
 <main>
 
+<!-- HERO -->
+<section class="hero">
 
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section class="hero" id="home">
+    <div class="hero-bg">
+        <img
+            class="hero-image"
+            src="images/giovanni2.jpg"
+            alt="DJ performing in dramatic concert lighting"
+            fetchpriority="high"
+        >
+        <div class="hero-overlay"></div>
+    </div>
 
     <div class="hero-noise"></div>
 
-    <div class="hero-grid"></div>
-
     <div class="hero-topline">
         <span>UGANDA / EAST AFRICA</span>
-        <span>DJ • RADIO • TV • EVENTS</span>
+        <span>DJ · ARTIST · RAPPER</span>
     </div>
 
+    <div class="hero-content">
 
-    <!-- BACK IMAGE -->
-
-    <div class="hero-image hero-image-back">
-        <img src="pics/1.jpg" alt="DJ Trizzy Vibes">
-    </div>
-
-
-    <!-- MAIN IMAGE -->
-
-    <div class="hero-image hero-image-main">
-        <img src="pics/2.jpg" alt="DJ Trizzy Vibes performing">
-    </div>
-
-
-    <!-- SMALL IMAGE -->
-
-    <div class="hero-image hero-image-small">
-        <img src="pics/3.jpg" alt="DJ Trizzy Vibes event">
-    </div>
-
-
-    <div class="hero-vertical">
-        <span>TURN IT UP</span>
-    </div>
-
-
-    <div class="hero-title">
-
-        <div class="title-small">
-            THE SOUND
-        </div>
+        <div class="hero-small">THE SOUND OF</div>
 
         <h1>
-            TRIZZY
+            <span class="hero-word">PUR</span>
+            <span class="hero-word outline">POSE.</span>
         </h1>
 
-        <h1 class="outline">
-            VIBES
-        </h1>
-
-    </div>
-
-
-    <div class="hero-bottom">
-
-        <div class="hero-description">
-            <span class="line"></span>
-
+        <div class="hero-bottom">
             <p>
-                Club energy. Radio personality.
-                Television presence.
-                One unmistakable sound.
+                Music that moves people.<br>
+                A message that moves hearts.
             </p>
+
+            <a href="music.html" class="circle-link">
+                <span>EXPLORE<br>MUSIC</span>
+                <strong>↘</strong>
+            </a>
         </div>
 
+    </div>
 
-        <div class="hero-platforms">
+    <div class="hero-side">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+        <span>01</span>
+    </div>
 
-            <div>
-                <small>ON AIR</small>
-                <strong>GALAXY FM 100.2</strong>
+    <div class="hero-marquee">
+        <div>
+            GOSPEL · MUSIC · FAITH · CULTURE · HOPE ·
+            GOSPEL · MUSIC · FAITH · CULTURE · HOPE ·
+            GOSPEL · MUSIC · FAITH · CULTURE · HOPE ·
+        </div>
+    </div>
+
+</section>
+
+<!-- INTRODUCTION -->
+<section class="intro section-pad">
+
+    <div class="section-number">01</div>
+
+    <div class="intro-content">
+        <div class="eyebrow">WHO IS GIOVANNI?</div>
+
+        <h2>NOT JUST<br><span>A DJ.</span></h2>
+
+        <div class="intro-grid">
+
+            <div class="intro-statement">
+                <p>Deejay Giovanni exists somewhere between the booth, the stage and the message.</p>
+
+                <img
+                    class="intro-photo"
+                    src="images/giovanni3.jpg"
+                    alt="Musician performing on stage"
+                    loading="lazy"
+                >
+
+                <span class="image-caption">BEHIND THE SOUND — THE PURPOSE</span>
             </div>
 
-            <div>
-                <small>ON SCREEN</small>
-                <strong>NTV</strong>
+            <div class="intro-copy">
+                <p>A Ugandan gospel DJ, Christian artist and rapper using sound as a vehicle for hope, faith and connection.</p>
+
+                <p>From high-energy gospel mixes to original music and live performances, Giovanni creates experiences that go beyond the ordinary.</p>
+
+                <a href="about.html" class="under-link">READ THE STORY <span>↗</span></a>
             </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- FEATURED MUSIC -->
+<section class="music-section section-pad">
+
+    <div class="music-background-word">MUSIC</div>
+
+    <div class="section-header">
+        <div>
+            <div class="eyebrow">02 / LISTEN</div>
+            <h2>SOUND <span>WITH</span><br>PURPOSE.</h2>
+        </div>
+
+        <a href="music.html" class="view-all">VIEW ALL MUSIC <span>↗</span></a>
+    </div>
+
+    <div class="music-feature">
+
+        <div class="music-art">
+            <img
+                class="music-cover-image"
+                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=85"
+                alt="Artist portrait for featured music"
+                loading="lazy"
+            >
+            <div class="music-art-shade"></div>
+            <div class="art-number">DG / 001</div>
+            <div class="art-stamp">SOUND<br>WITH<br>PURPOSE.</div>
+        </div>
+
+        <div class="music-info">
+
+            <div class="music-type"><span></span> LATEST RELEASE</div>
+
+            <h3>YOYO<br><span>RUGABA</span></h3>
+
+            <div class="music-details">
+                <span>SINGLE</span>
+                <span>GOSPEL</span>
+                <span>2025</span>
+            </div>
+
+            <p>A celebration of faith, joy and the goodness of God.</p>
+
+            <a href="music.html" class="listen-button">
+                <span class="play-icon">▶</span>
+                LISTEN NOW
+                <span class="button-arrow">↗</span>
+            </a>
+
+            <div class="music-note">ORIGINAL MUSIC. ETERNAL MESSAGE.</div>
 
         </div>
 
     </div>
 
+    <div class="track-strip">
 
-    <a href="#gallery" class="hero-scroll">
-        <span>SCROLL TO EXPLORE</span>
-        <i class="ri-arrow-down-line"></i>
+        <a href="music.html" class="mini-track">
+            <span class="track-index">01</span>
+            <span class="track-name">YOYO RUGABA</span>
+            <span class="track-type">SINGLE</span>
+            <span class="track-arrow">↗</span>
+        </a>
+
+        <a href="music.html" class="mini-track">
+            <span class="track-index">02</span>
+            <span class="track-name">THANK YOU LORD</span>
+            <span class="track-type">SINGLE</span>
+            <span class="track-arrow">↗</span>
+        </a>
+
+        <a href="music.html" class="mini-track">
+            <span class="track-index">03</span>
+            <span class="track-name">WANJAGALA</span>
+            <span class="track-type">SINGLE</span>
+            <span class="track-arrow">↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- MISSION -->
+<section class="statement">
+
+    <div class="statement-image">
+        <img
+            class="statement-photo"
+            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=2200&q=90"
+            alt="Crowd gathered at a live music event"
+            loading="lazy"
+        >
+    </div>
+
+    <div class="statement-overlay"></div>
+
+    <div class="statement-content">
+        <div class="eyebrow">THE MISSION</div>
+
+        <h2>
+            EVERY BEAT<br>
+            <span>HAS A</span><br>
+            <strong>MESSAGE.</strong>
+        </h2>
+
+        <a href="about.html" class="circle-link light">
+            <span>DISCOVER<br>THE MISSION</span>
+            <strong>↘</strong>
+        </a>
+    </div>
+
+    <div class="statement-index">SOUND IS THE VEHICLE. PURPOSE IS THE DESTINATION.</div>
+
+</section>
+
+<!-- TIKTOK LIVE -->
+<section class="tiktok-live section-pad">
+
+    <div class="tiktok-live-bg">
+        <img
+            src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1800&q=85"
+            alt=""
+            loading="lazy"
+        >
+        <span>LIVE</span>
+    </div>
+
+    <div class="tiktok-live-top">
+        <div class="eyebrow">EVERY SUNDAY</div>
+        <div class="live-status"><span></span> LIVE ON TIKTOK</div>
+    </div>
+
+    <div class="tiktok-live-content">
+
+        <div class="tiktok-live-time">
+            <small>STARTS AT</small>
+            <strong>10<span>PM</span></strong>
+            <small>EAT / UGANDA TIME</small>
+        </div>
+
+        <div class="tiktok-live-copy">
+            <h2>SUNDAY<br><span>LIVE.</span></h2>
+
+            <p>Every Sunday night, Giovanni goes live on TikTok for music, conversation, gospel, good energy and real connection.</p>
+
+            <a href="#" class="tiktok-button" target="_blank" rel="noopener">
+                <span class="tiktok-icon">♪</span>
+                JOIN THE LIVE
+                <span>↗</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="tiktok-live-bottom">
+        <span>MUSIC</span><i></i>
+        <span>CONVERSATION</span><i></i>
+        <span>FAITH</span><i></i>
+        <span>COMMUNITY</span>
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience section-pad">
+
+    <div class="section-number">03</div>
+
+    <div class="experience-content">
+
+        <div class="eyebrow">EXPERIENCE</div>
+        <h2>BUILT FOR<br><span>THE MOMENT.</span></h2>
+
+        <div class="experience-layout">
+
+            <div class="experience-photo">
+                <img
+                    src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1100&q=85"
+                    alt="Live event with stage lighting"
+                    loading="lazy"
+                >
+                <span>THE EXPERIENCE / 001</span>
+            </div>
+
+            <div class="experience-list">
+
+                <a href="booking.html" class="experience-item">
+                    <span class="experience-number">01</span>
+                    <div>
+                        <h3>GOSPEL DJ SETS</h3>
+                        <p>Energy, worship and music designed to move a room.</p>
+                    </div>
+                    <span class="experience-arrow">↗</span>
+                </a>
+
+                <a href="booking.html" class="experience-item">
+                    <span class="experience-number">02</span>
+                    <div>
+                        <h3>LIVE PERFORMANCE</h3>
+                        <p>Original music and Christian rap brought to the stage.</p>
+                    </div>
+                    <span class="experience-arrow">↗</span>
+                </a>
+
+                <a href="booking.html" class="experience-item">
+                    <span class="experience-number">03</span>
+                    <div>
+                        <h3>EVENTS</h3>
+                        <p>Concerts, celebrations, launches and ministry events.</p>
+                    </div>
+                    <span class="experience-arrow">↗</span>
+                </a>
+
+                <a href="booking.html" class="experience-item">
+                    <span class="experience-number">04</span>
+                    <div>
+                        <h3>MEDIA & APPEARANCES</h3>
+                        <p>Interviews, collaborations, campaigns and appearances.</p>
+                    </div>
+                    <span class="experience-arrow">↗</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VIDEO -->
+<section class="video-section section-pad">
+
+    <div class="video-header">
+        <div>
+            <div class="eyebrow">04 / WATCH</div>
+            <h2>SEE THE<br><span>ENERGY.</span></h2>
+        </div>
+        <p>THE SOUND. THE PEOPLE.<br>THE MOMENTS THAT MATTER.</p>
+    </div>
+
+    <a href="videos.html" class="video-card">
+
+        <img
+            class="video-cover-image"
+            src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2000&q=90"
+            alt="Concert stage filled with dramatic lights"
+            loading="lazy"
+        >
+
+        <div class="video-overlay"></div>
+
+        <div class="video-play">▶</div>
+        <div class="video-label">WATCH LATEST VIDEO</div>
+        <div class="video-corner">↗</div>
+        <span class="video-big-text">PLAY</span>
+
     </a>
 
 </section>
 
+<!-- BOOKING CTA -->
+<section class="booking-cta section-pad">
 
-
-<!-- =========================================================
-     MARQUEE
-========================================================= -->
-
-<section class="marquee">
-
-    <div class="marquee-track">
-
-        <span>DJ TRIZZY VIBES</span>
-        <i>✦</i>
-
-        <span>CLUBS</span>
-        <i>✦</i>
-
-        <span>EVENTS</span>
-        <i>✦</i>
-
-        <span>GALAXY FM 100.2</span>
-        <i>✦</i>
-
-        <span>NTV</span>
-        <i>✦</i>
-
-        <span>DJ TRIZZY VIBES</span>
-        <i>✦</i>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     INTRO / ABOUT
-========================================================= -->
-
-<section class="intro section" id="about">
-
-    <div class="section-number">01</div>
-
-    <div class="intro-heading">
-
-        <p class="eyebrow">THE EXPERIENCE</p>
-
-        <h2>
-            MORE THAN
-            <span>A DJ.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="intro-content">
-
-        <div class="intro-image reveal-image">
-
-            <img src="pics/4.jpg" alt="DJ Trizzy Vibes">
-
-            <div class="image-caption">
-                <span>TRIZZY / 001</span>
-                <span>LIVE</span>
-            </div>
-
-        </div>
-
-
-        <div class="intro-text">
-
-            <p class="large-text">
-                DJ Trizzy Vibes is a dynamic Ugandan DJ bringing
-                sound, culture and unforgettable energy to clubs,
-                events, radio and television.
-            </p>
-
-            <p>
-                From packed nightlife venues to major events,
-                Trizzy creates sets that don't simply play in the
-                background — they become part of the experience.
-            </p>
-
-            <a href="#booking" class="text-link">
-                BOOK THE EXPERIENCE
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     MEDIA
-========================================================= -->
-
-<section class="media section" id="media">
-
-    <div class="section-number">02</div>
-
-    <div class="media-heading">
-
-        <p class="eyebrow">THE PLATFORMS</p>
-
-        <h2>
-            FROM THE
-            <span>BOOTH</span>
-            TO THE
-            <span>SCREEN.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="media-stage">
-
-
-        <!-- GALAXY -->
-
-        <div class="media-card galaxy">
-
-            <div class="media-image">
-                <img src="pics/5.jpg" alt="DJ Trizzy Vibes Galaxy FM">
-            </div>
-
-            <div class="media-info">
-
-                <span>RADIO / 01</span>
-
-                <h3>
-                    GALAXY
-                    <small>FM 100.2</small>
-                </h3>
-
-                <p>
-                    Bringing personality, music and energy
-                    to the airwaves.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- NTV -->
-
-        <div class="media-card ntv">
-
-            <div class="media-image">
-                <img src="pics/1.jpg" alt="DJ Trizzy Vibes NTV">
-            </div>
-
-            <div class="media-info">
-
-                <span>TELEVISION / 02</span>
-
-                <h3>
-                    NTV
-                </h3>
-
-                <p>
-                    Music, entertainment and television presence
-                    beyond the DJ booth.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     EVENTS
-========================================================= -->
-
-<section class="events section" id="events">
-
-    <div class="section-number">03</div>
-
-    <div class="events-header">
-
-        <div>
-
-            <p class="eyebrow">THE SCENE</p>
-
-            <h2>
-                WHERE
-                <span>THE VIBES</span>
-                LIVE.
-            </h2>
-
-        </div>
-
-        <p class="events-intro">
-            From intimate celebrations to packed clubs,
-            corporate events and major entertainment stages.
-        </p>
-
-    </div>
-
-
-    <div class="event-list">
-
-        <div class="event-row">
-
-            <span>01</span>
-
-            <h3>CLUB NIGHTS</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-
-        <div class="event-row">
-
-            <span>02</span>
-
-            <h3>FESTIVALS</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-
-        <div class="event-row">
-
-            <span>03</span>
-
-            <h3>CORPORATE EVENTS</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-
-        <div class="event-row">
-
-            <span>04</span>
-
-            <h3>PRIVATE PARTIES</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-
-        <div class="event-row">
-
-            <span>05</span>
-
-            <h3>WEDDINGS</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-
-        <div class="event-row">
-
-            <span>06</span>
-
-            <h3>BRAND ACTIVATIONS</h3>
-
-            <span class="event-arrow">
-                <i class="ri-arrow-right-up-line"></i>
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     MASSIVE GALLERY
-========================================================= -->
-
-<section class="gallery section" id="gallery">
-
-    <div class="section-number">04</div>
-
-    <div class="gallery-header">
-
-        <div>
-
-            <p class="eyebrow">VISUAL ARCHIVE</p>
-
-            <h2>
-                TRIZZY
-                <span>IN MOTION.</span>
-            </h2>
-
-        </div>
-
-        <p>
-            A visual archive of nights, crowds,
-            stages, studios and moments.
-        </p>
-
-    </div>
-
-
-    <div class="gallery-grid" id="galleryGrid">
-
-        <!-- JAVASCRIPT WILL LOAD IMAGES HERE -->
-
-    </div>
-
-
-    <button class="load-more" id="loadMore">
-
-        <span>LOAD MORE MOMENTS</span>
-
-        <i class="ri-add-line"></i>
-
-    </button>
-
-</section>
-
-
-
-<!-- =========================================================
-     QUOTE
-========================================================= -->
-
-<section class="quote">
-
-    <div class="quote-bg">
-        <img src="pics/1.jpg" alt="">
-    </div>
-
-    <div class="quote-overlay"></div>
-
-    <div class="quote-content">
-
-        <span>THE TRIZZY VIBES PHILOSOPHY</span>
-
-        <h2>
-            DON'T JUST
-            <em>PLAY</em>
-            MUSIC.
-            <strong>CREATE A MOMENT.</strong>
-        </h2>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     BOOKING
-========================================================= -->
-
-<section class="booking section" id="booking">
-
-    <div class="section-number">05</div>
-
-    <div class="booking-top">
-
-        <p class="eyebrow">LET'S MAKE IT LOUD</p>
-
-        <h2>
-            BOOK
-            <span>TRIZZY.</span>
-        </h2>
-
-    </div>
-
+    <div class="booking-number">05</div>
 
     <div class="booking-content">
+        <div class="eyebrow">BOOKINGS / COLLABORATIONS</div>
 
-        <div class="booking-image">
+        <h2>GOT AN<br><span>EVENT?</span></h2>
 
-            <img src="pics/2.jpg" alt="Book DJ Trizzy Vibes">
+        <p>Let's make it unforgettable.</p>
 
-            <div class="booking-stamp">
-                <span>AVAILABLE</span>
-                <span>FOR EVENTS</span>
-            </div>
-
-        </div>
-
-
-        <div class="booking-info">
-
-            <p>
-                Looking for a DJ who can control the room,
-                understand the crowd and create a soundtrack
-                people remember?
-            </p>
-
-
-            <div class="booking-types">
-
-                <span>CLUBS</span>
-                <span>FESTIVALS</span>
-                <span>CORPORATE</span>
-                <span>WEDDINGS</span>
-                <span>PRIVATE EVENTS</span>
-                <span>BRAND ACTIVATIONS</span>
-
-            </div>
-
-
-            <a href="tel:+256000000000" class="booking-button">
-
-                <span>BOOK NOW</span>
-
-                <i class="ri-arrow-right-up-line"></i>
-
-            </a>
-
-
-            <div class="booking-details">
-
-                <div>
-                    <small>PHONE</small>
-                    <a href="tel:+256000000000">
-                        +256 000 000 000
-                    </a>
-                </div>
-
-                <div>
-                    <small>WHATSAPP</small>
-                    <a href="https://wa.me/256000000000">
-                        START A CHAT
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
+        <a href="booking.html" class="giant-button">
+            <span>BOOK<br>GIOVANNI</span>
+            <strong>↗</strong>
+        </a>
     </div>
+
+    <div class="booking-decoration">DG.</div>
 
 </section>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer class="footer">
-
-    <div class="footer-main">
-
-        <div class="footer-brand">
-
-            <span>DJ</span>
-
-            <h2>
-                TRIZZY
-                <br>
-                VIBES
-            </h2>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#media">MEDIA</a>
-            <a href="#events">EVENTS</a>
-            <a href="#gallery">GALLERY</a>
-            <a href="#booking">BOOKINGS</a>
-
-        </div>
-
-
-        <div class="footer-socials">
-
-            <a href="#">
-                INSTAGRAM
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-            <a href="#">
-                TIKTOK
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-            <a href="#">
-                FACEBOOK
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-            <a href="#">
-                YOUTUBE
-                <i class="ri-arrow-right-up-line"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            © 2026 DJ TRIZZY VIBES
-        </span>
-
-        <span>
-            DESIGNED & DEVELOPED WITH VISION
-        </span>
-
-    </div>
-
-</footer>
 
 </main>
 
+<!-- FOOTER -->
+<footer>
 
+    <div class="footer-top">
 
-<!-- =========================================================
-     IMAGE LIGHTBOX
-========================================================= -->
+        <a href="index.html" class="footer-brand">
+            <span class="footer-symbol">G</span>
+            <span>DEEJAY<br>GIOVANNI</span>
+        </a>
 
-<div class="lightbox" id="lightbox">
+        <div class="footer-navigation">
+            <a href="music.html">Music</a>
+            <a href="mixes.html">Mixes</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">Story</a>
+            <a href="booking.html">Booking</a>
+        </div>
 
-    <button class="lightbox-close">
-        <i class="ri-close-line"></i>
-    </button>
+        <div class="footer-socials">
+            <a href="#" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="#" target="_blank" rel="noopener">YouTube ↗</a>
+            <a href="#" target="_blank" rel="noopener">TikTok ↗</a>
+        </div>
 
-    <div class="lightbox-image">
-        <img src="" alt="">
     </div>
 
-    <div class="lightbox-counter">
-        <span id="currentImage">01</span>
-        /
-        <span id="totalImages">01</span>
+    <div class="footer-bottom">
+        <span>© <span id="year"></span> DEEJAY GIOVANNI</span>
+        <span>UGANDA / EAST AFRICA</span>
+        <span>SOUND WITH PURPOSE.</span>
     </div>
 
-    <button class="lightbox-prev">
-        <i class="ri-arrow-left-line"></i>
-    </button>
-
-    <button class="lightbox-next">
-        <i class="ri-arrow-right-line"></i>
-    </button>
-
-</div>
-
+</footer>
 
 <script src="script.js"></script>
 

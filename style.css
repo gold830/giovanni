@@ -2181,3 +2181,224 @@ footer {
         transition-duration: .01ms !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   DEEJAY GIOVANNI — GLOBAL HEADING FONT
+   GILDA DISPLAY
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 *,
+h2 *,
+h3 *,
+h4 *,
+h5 *,
+h6 * {
+    font-family: "Gilda Display", Georgia, serif !important;
+    font-weight: 400;
+}
+
+/* Preserve the display-heading appearance */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.035em;
+}
+
+/* Responsive heading refinement */
+@media (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: -0.025em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   DEEJAY GIOVANNI — HOMEPAGE
+   OUTLINED GILDA DISPLAY HEADINGS
+========================================================= */
+
+/* Base heading typography */
+body:not(.music-page) h1,
+body:not(.music-page) h2,
+body:not(.music-page) h3,
+body:not(.music-page) h4,
+body:not(.music-page) h5,
+body:not(.music-page) h6 {
+    font-family: "Gilda Display", Georgia, serif !important;
+    font-weight: 400 !important;
+    text-transform: none;
+    font-synthesis: none;
+    text-shadow: none !important;
+}
+
+/* Transparent text with an outlined edge */
+body:not(.music-page) h1,
+body:not(.music-page) h2,
+body:not(.music-page) h3,
+body:not(.music-page) h4,
+body:not(.music-page) h5,
+body:not(.music-page) h6,
+body:not(.music-page) h1 *,
+body:not(.music-page) h2 *,
+body:not(.music-page) h3 *,
+body:not(.music-page) h4 *,
+body:not(.music-page) h5 *,
+body:not(.music-page) h6 * {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke: 1px rgba(243, 232, 213, 0.95);
+}
+
+/* HERO — white outline over the photograph */
+body:not(.music-page) .hero-content h1,
+body:not(.music-page) .hero-content h1 * {
+    -webkit-text-stroke: 1.2px #f3e8d5;
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+}
+
+/* LIGHT INTRO SECTION — black outline */
+body:not(.music-page) .intro-content h2,
+body:not(.music-page) .intro-content h2 *,
+body:not(.music-page) .intro-content h2 span {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+}
+
+/* FEATURED MUSIC — light text outline on dark background */
+body:not(.music-page) .section-header h2,
+body:not(.music-page) .section-header h2 *,
+body:not(.music-page) .music-info h3,
+body:not(.music-page) .music-info h3 * {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+}
+
+/* MISSION — white outline over the background image */
+body:not(.music-page) .statement-content h2,
+body:not(.music-page) .statement-content h2 *,
+body:not(.music-page) .statement-content h2 span,
+body:not(.music-page) .statement-content h2 strong {
+    -webkit-text-stroke: 1.1px #ffffff !important;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+/* SUNDAY LIVE — dark outline for light text areas */
+body:not(.music-page) .tiktok-live-copy h2,
+body:not(.music-page) .tiktok-live-copy h2 *,
+body:not(.music-page) .tiktok-live-copy h2 span {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+}
+
+/* EXPERIENCE — black outline on the light section */
+body:not(.music-page) .experience-content > h2,
+body:not(.music-page) .experience-content > h2 *,
+body:not(.music-page) .experience-content > h2 span {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+/* VIDEO — black outline on the light section */
+body:not(.music-page) .video-header h2,
+body:not(.music-page) .video-header h2 *,
+body:not(.music-page) .video-header h2 span {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+/* BOOKING — white outline on the dark section */
+body:not(.music-page) .booking-content h2,
+body:not(.music-page) .booking-content h2 *,
+body:not(.music-page) .booking-content h2 span {
+    -webkit-text-stroke: 1px #ffffff !important;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+}
+
+/* SONG AND SERVICE HEADINGS */
+body:not(.music-page) .experience-item h3,
+body:not(.music-page) .music-record-meta h3 {
+    -webkit-text-stroke: 0.7px #ffffff !important;
+}
+
+/* MOBILE REFINEMENTS */
+@media (max-width: 768px) {
+    body:not(.music-page) .hero-content h1 {
+        letter-spacing: -0.035em;
+    }
+
+    body:not(.music-page) .intro-content h2,
+    body:not(.music-page) .section-header h2,
+    body:not(.music-page) .music-info h3,
+    body:not(.music-page) .statement-content h2,
+    body:not(.music-page) .tiktok-live-copy h2,
+    body:not(.music-page) .experience-content > h2,
+    body:not(.music-page) .video-header h2,
+    body:not(.music-page) .booking-content h2 {
+        letter-spacing: -0.025em;
+    }
+}

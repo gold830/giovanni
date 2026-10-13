@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Deejay Giovanni</title>
+    <meta name="description" content="Get in touch with Deejay Giovanni for bookings, events, collaborations and enquiries.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gilda+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome: recognizable WhatsApp, email and phone icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body class="contact-page">
+
+    <!-- NAVIGATION -->
+    <header class="contact-nav">
+        <a href="index.html" class="contact-logo">
+            <span class="logo-mark">G</span>
+            <span class="logo-name">DEEJAY<br>GIOVANNI</span>
+        </a>
+
+        <nav class="contact-nav-links">
+            <a href="index.html">Home</a>
+        </nav>
+
+        <span class="nav-status">
+            <span class="status-dot"></span>
+            AVAILABLE FOR BOOKINGS
+        </span>
+    </header>
+
+
+    <!-- CONTACT CONTENT — NO HERO -->
+    <main class="contact-main">
+
+        <section class="contact-intro">
+            <p class="contact-eyebrow">FOR BOOKINGS & ENQUIRIES</p>
+
+            <h1>
+                GET IN<br>
+                <span>TOUCH.</span>
+            </h1>
+
+            <p class="contact-description">
+                Have an event, a collaboration, or something in mind?
+                Reach out directly. Let's make it happen.
+            </p>
+        </section>
+
+
+        <!-- THREE DIRECT CONTACT OPTIONS -->
+        <section class="contact-options" aria-label="Contact options">
+
+            <!-- WHATSAPP -->
+            <a
+                class="contact-option whatsapp-option"
+                href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contact Deejay Giovanni on WhatsApp"
+            >
+                <div class="contact-option-top">
+                    <span class="contact-icon whatsapp-icon">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    </span>
+
+                    <span class="contact-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"
+                           aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="contact-option-bottom">
+                    <span class="contact-option-label">01 / MESSAGE</span>
+                    <h2>WhatsApp<span>.</span></h2>
+                    <p>Let's talk about your next event.</p>
+                    <span class="contact-action">START A CONVERSATION
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- EMAIL -->
+            <a
+                class="contact-option email-option"
+                href="mailto:YOUR_EMAIL_ADDRESS"
+                aria-label="Email Deejay Giovanni"
+            >
+                <div class="contact-option-top">
+                    <span class="contact-icon email-icon">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </span>
+
+                    <span class="contact-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"
+                           aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="contact-option-bottom">
+                    <span class="contact-option-label">02 / ENQUIRIES</span>
+                    <h2>Email<span>.</span></h2>
+                    <p>For bookings, partnerships and official enquiries.</p>
+                    <span class="contact-action">SEND AN EMAIL
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </a>
+
+
+            <!-- PHONE CALL -->
+            <a
+                class="contact-option call-option"
+                href="tel:+256YOURPHONENUMBER"
+                aria-label="Call Deejay Giovanni"
+            >
+                <div class="contact-option-top">
+                    <span class="contact-icon phone-icon">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    </span>
+
+                    <span class="contact-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"
+                           aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="contact-option-bottom">
+                    <span class="contact-option-label">03 / SPEAK DIRECTLY</span>
+                    <h2>Call Me<span>.</span></h2>
+                    <p>Prefer a conversation? Give me a call.</p>
+                    <span class="contact-action">MAKE A CALL
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </a>
+
+        </section>
+
+
+        <!-- CLOSING LINE -->
+        <section class="contact-bottom">
+            <span class="contact-bottom-line"></span>
+            <p>GOOD MUSIC. GREAT MOMENTS. <span>MEANINGFUL CONNECTIONS.</span></p>
+            <span class="contact-bottom-line"></span>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="contact-footer">
+        <a href="index.html" class="footer-brand">G</a>
+
+        <p>DEEJAY GIOVANNI &copy; <span id="contact-year"></span></p>
+
+        <a href="index.html" class="back-home">
+            BACK TO HOME
+            <i class="fa-solid fa-arrow-up-right-from-square"
+               aria-hidden="true"></i>
+        </a>
+    </footer>
+
+
+    <script>
+        document.getElementById("contact-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>

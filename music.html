@@ -1,1034 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Music — Deejay Giovanni | Sound With Purpose</title>
-
-    <meta
-        name="description"
-        content="Explore the music of Deejay Giovanni — gospel music, Christian rap, singles and sounds created with purpose."
-    >
+    <title>Music | Deejay Giovanni</title>
+    <meta name="description" content="Explore music by Deejay Giovanni — gospel sounds, Christian music and records created to inspire through sound and faith.">
+    <meta name="theme-color" content="#111110">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
 
-    <!-- MASTER WEBSITE CSS -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Gilda+Display&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+
+
+
     <link rel="stylesheet" href="style.css">
-
-    <!-- MUSIC PAGE CSS -->
     <link rel="stylesheet" href="music.css">
 
+    <!-- Music page styles are added to style.css in step 2 -->
 </head>
 
+<body class="music-page">
 
-<body>
+    <!-- LOADER -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <span>G.</span>
+            <div class="loader-line"><i></i></div>
+            <small>DEEJAY GIOVANNI</small>
+        </div>
+    </div>
 
-<!-- =====================================================
-     PAGE LOADER
-===================================================== -->
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Deejay Giovanni home">
+            <span class="logo-symbol">G</span>
+            <span class="logo-name">DEEJAY<br>GIOVANNI</span>
+        </a>
 
-<div class="loader">
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="index.html"><span>*</span> HOME</a>
+            <a href="music.html" class="active" aria-current="page"><span>*</span> MUSIC</a>
+            <a href="mixes.html"><span>*</span> MIXES</a>
+            <a href="events.html"><span>*</span> EVENTS</a>
+            <a href="about.html"><span>*</span> STORY</a>
+        </nav>
 
-    <div class="loader-inner">
+        <a href="booking.html" class="header-book">Book Giovanni</a>
 
-        <span>G</span>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
-        <div class="loader-line">
-            <i></i>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        
+
+        <nav aria-label="Mobile navigation">
+            <a href="index.html"><span>*</span> HOME</a>
+            <a href="music.html" ><span>*</span> MUSIC</a>
+            <a href="mixes.html"><span>*</span> MIXES</a>
+            <a href="about.html"><span>*</span> STORY</a>
+            <a href="booking.html" class="mobile-book">Get In Touch</a>
+        </nav>
+
+        <div class="mobile-socials">
+            <a href="https://www.instagram.com/deejay_giovanni/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.youtube.com/@deejaygiovanniug/" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/@deejaygiovanni/" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://x.com/DeejaGiovanni" target="_blank" rel="noopener">X</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- MUSIC HERO -->
+        <section class="music-hero">
+            <div class="music-hero-image">
+                <img
+                    src="images/giovannimusic.jpg"
+                    alt="Deejay Giovanni"
+                    fetchpriority="high"
+                >
+                <div class="music-hero-shade"></div>
+            </div>
+
+            <div class="music-hero-top">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="music-hero-content">
+                <p class="eyebrow">THE SOUND OF PURPOSE</p>
+
+                <h1>
+                    Faith in<br>
+                    <em>every frequency.</em>
+                </h1>
+
+                <div class="music-hero-bottom">
+                    <p>
+                        
+                    </p>
+
+                    <a href="#the-music" class="music-discover">
+                        <span class="music-discover-icon"></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="music-hero-index">MUSIC / 01</div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="music-intro section-pad">
+            <div class="music-intro-label">
+                <span class="eyebrow"></span>
+                <span class="music-intro-line"></span>
+            </div>
+
+            <div class="music-intro-grid">
+                <h2>
+                    More than<br>
+                    <em>something to hear.</em>
+                </h2>
+
+                <div class="music-intro-copy">
+                    <p>
+                        For Deejay Giovanni, music is more than rhythm.
+                        It is a way to express faith, share hope and bring
+                        people together through sound.
+                    </p>
+
+                    <p>
+                        Explore original records that bring his musical
+                        identity and Christian message into focus.
+                    </p>
+
+                    <a class="under-link" href="https://www.youtube.com/@deejaygiovanniug/" target="_blank" rel="noopener">
+                        VISIT THE YOUTUBE CHANNEL
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+<!-- FEATURED TRACK -->
+<section class="music-feature section-pad" id="the-music">
+
+    <div class="music-section-heading">
+        <div>
+            <span class="eyebrow"></span>
+            <h2>Listen <em>closely.</em></h2>
         </div>
 
-        <small>DEEJAY GIOVANNI</small>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
-     CURSOR
-===================================================== -->
-
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
-
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="header">
-
-    <a href="index.html" class="logo">
-
-        <span class="logo-symbol">G</span>
-
-        <span class="logo-name">
-            DEEJAY<br>
-            GIOVANNI
+        <span class="music-heading-note">
+            ORIGINAL MUSIC · DEEJAY GIOVANNI
         </span>
-
-    </a>
-
-
-    <nav class="desktop-nav">
-
-        <a href="index.html">
-            <span>*</span>
-            HOME
-        </a>
-
-        <a href="music.html" class="active">
-            <span>*</span>
-            MUSIC
-        </a>
-
-        <a href="mixes.html">
-            <span>*</span>
-            MIXES
-        </a>
-
-        <a href="events.html">
-            <span>*</span>
-            EVENTS
-        </a>
-
-        <a href="about.html">
-            <span>*</span>
-            STORY
-        </a>
-
-    </nav>
-
-
-    <a href="booking.html" class="header-book">
-        Book Giovanni
-    </a>
-
-
-    <button
-        class="menu-toggle"
-        aria-label="Open menu"
-        aria-expanded="false"
-    >
-        <span></span>
-        <span></span>
-    </button>
-
-</header>
-
-
-<!-- =====================================================
-     MOBILE MENU
-===================================================== -->
-
-<div class="mobile-menu">
-
-    <div class="mobile-menu-number">
-        02 — 06
     </div>
 
+    <article class="featured-record">
 
-    <nav>
+        <!-- EMBEDDED FEATURED VIDEO -->
+        <div class="featured-record-art featured-video">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/RfF9xO0rAs8?rel=0"
+                title="Yoyo Rugaba — Deejay Giovanni"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
 
-        <a href="index.html">
-            <span>*</span>
-            HOME
-        </a>
-
-        <a href="music.html">
-            <span>*</span>
-            MUSIC
-        </a>
-
-        <a href="mixes.html">
-            <span>*</span>
-            MIXES
-        </a>
-
-        <a href="events.html">
-            <span>*</span>
-            EVENTS
-        </a>
-
-        <a href="about.html">
-            <span>*</span>
-            STORY
-        </a>
-
-        <a href="booking.html" class="mobile-book">
-            Book Giovanni
-        </a>
-
-    </nav>
-
-
-    <div class="mobile-socials">
-
-        <a href="#" target="_blank" rel="noopener">
-            Instagram
-        </a>
-
-        <a href="#" target="_blank" rel="noopener">
-            YouTube
-        </a>
-
-        <a href="#" target="_blank" rel="noopener">
-            TikTok
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
-<main>
-
-
-<!-- =====================================================
-     MUSIC HERO
-===================================================== -->
-
-<section class="music-hero">
-
-    <div class="music-hero-background">
-        <div class="music-hero-letter">M</div>
-    </div>
-
-
-    <div class="music-hero-noise"></div>
-
-
-    <div class="music-page-number">
-        01 / MUSIC
-    </div>
-
-
-    <div class="music-hero-topline">
-
-        <span>
-            DEEJAY GIOVANNI
-        </span>
-
-        <span>
-            ORIGINAL MUSIC / GOSPEL / RAP
-        </span>
-
-    </div>
-
-
-    <div class="music-hero-content">
-
-        <div class="eyebrow">
-            SOUND WITH PURPOSE
+            <span class="record-number">01</span>
         </div>
 
+        <div class="featured-record-info">
 
-        <h1>
+            <div class="record-overline">
+                <span class="record-status-dot"></span>
+                <span>FEATURED TRACK</span>
+            </div>
 
-            THE
-            <span>SOUND.</span>
-
-            <br>
-
-            THE
-            <strong>MESSAGE.</strong>
-
-        </h1>
-
-
-        <div class="music-hero-bottom">
+            <h3>Yoyo<br><em>Rugaba.</em></h3>
 
             <p>
-                Original music, gospel and Christian rap
-                created to carry faith, joy and purpose
-                beyond the speakers.
+                Step into the sound of Deejay Giovanni.
+                Experience the visuals, discover the music
+                and feel the message — right here.
             </p>
 
+            <div class="record-tags">
+                <span>ORIGINAL MUSIC</span>
+                <span>DEEJAY GIOVANNI</span>
+            </div>
 
-            <div class="music-hero-scroll">
+            <a
+                class="listen-button"
+                href="#music-collection">
+                <span class="play-icon">↓</span>
+                DISCOVER MORE MUSIC
+            </a>
 
-                <span>
-                    SCROLL
-                </span>
-
-                <i></i>
-
-                <span>
-                    01
-                </span>
-
+            <div class="record-footnote">
+                <span></span>
+                <span>PRESS PLAY. FEEL THE MESSAGE.</span>
             </div>
 
         </div>
+    </article>
+</section>
+
+
+<!-- MORE MUSIC -->
+<section class="music-library section-pad" id="music-collection">
+
+    <div class="music-library-heading">
+        <div>
+            <span class="eyebrow"></span>
+            <h2>More to <em>discover.</em></h2>
+        </div>
+
+        <p>
+            Different songs. One purpose.
+            Explore more of Giovanni's music.
+        </p>
+    </div>
+
+
+    <div class="music-record-grid">
+
+        <!-- THANK YOU LORD -->
+        <article class="music-record-card">
+
+            <div class="music-record-cover music-video">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/h513zKXFt_w?rel=0"
+                    title="Thank You Lord — Deejay Giovanni"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <span class="music-record-number">02</span>
+            </div>
+
+            <div class="music-record-meta">
+                <div>
+                    <span class="music-record-type">ORIGINAL MUSIC</span>
+                    <h3>Thank You Lord</h3>
+                    <p>A moment of gratitude expressed through music.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- WANJAGALA -->
+        <article class="music-record-card">
+
+            <div class="music-record-cover music-video">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/jJEY4WvXXL8?rel=0"
+                    title="Wanjagala — Deejay Giovanni"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <span class="music-record-number">03</span>
+            </div>
+
+            <div class="music-record-meta">
+                <div>
+                    <span class="music-record-type">ORIGINAL MUSIC</span>
+                    <h3>Wanjagala</h3>
+                    <p>Another sound from Giovanni's musical journey.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- CONGRATULATIONS -->
+        <article class="music-record-card">
+
+            <div class="music-record-cover music-video">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/vIhcZgnvBjc?rel=0"
+                    title="Congratulations — Deejay Giovanni"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <span class="music-record-number">04</span>
+            </div>
+
+            <div class="music-record-meta">
+                <div>
+                    <span class="music-record-type">ORIGINAL MUSIC</span>
+                    <h3>Congratulations</h3>
+                    <p>A celebration captured through music.</p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- GOD FIRST -->
+        <article class="music-record-card">
+
+            <div class="music-record-cover music-video">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/sVSpayRZjiM?rel=0"
+                    title="God First — Deejay Giovanni"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <span class="music-record-number">05</span>
+            </div>
+
+            <div class="music-record-meta">
+                <div>
+                    <span class="music-record-type">ORIGINAL MUSIC</span>
+                    <h3>God First</h3>
+                    <p>A reminder of the foundation behind the journey.</p>
+                </div>
+            </div>
+        </article>
 
     </div>
 
 
-  
+    <div class="music-library-footer">
+        <span>THE MUSIC CONTINUES</span>
+
+        <a
+            class="under-link"
+            href="https://www.youtube.com/@deejaygiovanniug/"
+            target="_blank"
+            rel="noopener noreferrer">
+            MORE FROM GIOVANNI
+        </a>
+    </div>
 
 </section>
 
 
-<!-- =====================================================
-     FEATURED RELEASE
-===================================================== -->
-
-<section class="release-section">
-
-    <div class="section-number">
-        02
-    </div>
 
 
-    <div class="release-header">
-
-        <div>
-
-            <div class="eyebrow">
-                FEATURED RELEASE
-            </div>
-
-            <h2>
-                LATEST
-                <span>SOUND.</span>
-            </h2>
-
-        </div>
 
 
-        <div class="release-header-copy">
-
-            <p>
-                A song can entertain.
-                A song can encourage.
-                A song can carry a message.
-            </p>
-
-        </div>
-
-    </div>
 
 
-    <div class="featured-release">
-
-        <!-- =============================================
-             ALBUM ART PLACEHOLDER
-             Replace background/image later.
-        ============================================== -->
-
-        <div class="release-art">
-
-            <div class="release-art-placeholder">
-
-                <span class="release-art-symbol">
-                    G
-                </span>
-
-                <span class="release-art-title">
-                    YOYO<br>
-                    RUGABA
-                </span>
-
-            </div>
 
 
-            <div class="release-art-meta">
-
-                <span>
-                    01
-                </span>
-
-                <span>
-                    SINGLE
-                </span>
-
-            </div>
 
 
-            <div class="release-art-label">
-                DEEJAY GIOVANNI
-            </div>
-
-        </div>
 
 
-        <!-- =============================================
-             RELEASE INFORMATION
-        ============================================== -->
-
-        <div class="release-info">
-
-            <div class="release-kicker">
-                LATEST RELEASE / 2025
-            </div>
 
 
-            <h3>
-                YOYO
-                <br>
-                RUGABA
-            </h3>
 
 
-            <div class="release-tags">
+        <!-- YOUTUBE CTA -->
+        <section class="music-channel section-pad">
+            <div class="music-channel-decoration">G.</div>
 
-                <span>
-                    SINGLE
-                </span>
+            <div class="music-channel-content">
+                <span class="eyebrow">STAY CLOSE TO THE SOUND</span>
 
-                <span>
-                    GOSPEL
-                </span>
+                <h2>
+                    Your next<br>
+                    <em>favourite track.</em>
+                </h2>
 
-                <span>
-                    2025
-                </span>
-
-            </div>
-
-
-            <p class="release-description">
-                A celebration of faith, joy and the goodness
-                of God. A sound built to remind people that
-                there is still reason to dance, believe and
-                keep moving forward.
-            </p>
-
-
-            <div class="release-actions">
-
-                <!-- Replace # with actual streaming link -->
+                <p>
+                    Follow the music, discover new releases and
+                    experience more from Deejay Giovanni on YouTube.
+                </p>
 
                 <a
-                    href="#"
-                    class="listen-button music-play-button"
+                    href="https://www.youtube.com/@deejaygiovanniug/"
+                    class="music-channel-button"
                     target="_blank"
                     rel="noopener"
                 >
-
-                    <span class="play-icon">
-                        ▶
-                    </span>
-
-                    LISTEN NOW
-
+                    <span class="music-channel-play">▶</span>
+                    <span>EXPLORE THE CHANNEL</span>
                 </a>
-
             </div>
 
+            <div class="music-channel-side">
+                <span class="channel-side-line"></span>
+                <span>GOSPEL · MUSIC · PURPOSE</span>
+            </div>
+        </section>
 
-            <div class="release-platforms">
-
-                <span>
-                    AVAILABLE ON
-                </span>
-
-                <a href="#" target="_blank" rel="noopener">
-                    YouTube
-                </a>
-
-                <a href="#" target="_blank" rel="noopener">
-                    Audiomack
-                </a>
-
-                <a href="#" target="_blank" rel="noopener">
-                    Spotify
-                </a>
-
+        <!-- BOOKING CTA -->
+        <section class="music-booking section-pad">
+            <div class="music-booking-top">
+                <span class="eyebrow">TAKE THE SOUND FURTHER</span>
+                <span class="music-booking-number">03 / BOOKING</span>
             </div>
 
-        </div>
+            <div class="music-booking-content">
+                <h2>
+                    Let's make<br>
+                    <em>some noise.</em>
+                </h2>
 
-    </div>
+                <div class="music-booking-copy">
+                    <p>
+                        Planning a christian event or looking for the right
+                        sound and energy? Let's talk about your vision.
+                    </p>
 
-</section>
-
-
-<!-- =====================================================
-     ARTIST STATEMENT
-===================================================== -->
-
-<section class="music-statement">
-
-    <div class="music-statement-bg">
-        PURPOSE
-    </div>
-
-
-    <div class="music-statement-content">
-
-        <div class="eyebrow">
-            THE MUSIC
-        </div>
-
-
-        <h2>
-
-            MORE THAN
-            <br>
-
-            <span>A SOUND.</span>
-
-            <br>
-
-            A
-            <strong>MESSAGE.</strong>
-
-        </h2>
-
-
-        <div class="music-statement-bottom">
-
-            <p>
-                Giovanni's music lives at the intersection
-                of faith, culture and contemporary sound.
-                It is music made to move the body while
-                speaking to something deeper.
-            </p>
-
-
-            <span class="statement-mark">
-                G
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     DISCOGRAPHY
-===================================================== -->
-
-<section class="discography">
-
-    <div class="section-number">
-        03
-    </div>
-
-
-    <div class="discography-header">
-
-        <div>
-
-            <div class="eyebrow">
-                DISCOGRAPHY
-            </div>
-
-            <h2>
-                THE
-                <span>RECORD.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="discography-count">
-            <span>
-                RELEASES
-            </span>
-
-            <strong>
-                03
-            </strong>
-        </div>
-
-    </div>
-
-
-    <!-- =============================================
-         TRACK LIST
-    ============================================== -->
-
-    <div class="discography-list">
-
-
-        <!-- TRACK 01 -->
-
-        <article class="release-row">
-
-            <div class="release-row-number">
-                01
-            </div>
-
-
-            <div class="release-row-art">
-
-                <div>
-                    DG
+                    <a href="booking.html" class="music-booking-link">
+                        BOOK DEEJAY GIOVANNI
+                    </a>
                 </div>
-
             </div>
-
-
-            <div class="release-row-main">
-
-                <h3>
-                    YOYO RUGABA
-                </h3>
-
-                <p>
-                    Gospel Single
-                </p>
-
-            </div>
-
-
-            <div class="release-row-year">
-                2025
-            </div>
-
-        </article>
-
-
-        <!-- TRACK 02 -->
-
-        <article class="release-row">
-
-            <div class="release-row-number">
-                02
-            </div>
-
-
-            <div class="release-row-art">
-
-                <div>
-                    DG
-                </div>
-
-            </div>
-
-
-            <div class="release-row-main">
-
-                <h3>
-                    THANK YOU LORD
-                </h3>
-
-                <p>
-                    Gospel Single
-                </p>
-
-            </div>
-
-
-            <div class="release-row-year">
-                2025
-            </div>
-
-        </article>
-
-
-        <!-- TRACK 03 -->
-
-        <article class="release-row">
-
-            <div class="release-row-number">
-                03
-            </div>
-
-
-            <div class="release-row-art">
-
-                <div>
-                    DG
-                </div>
-
-            </div>
-
-
-            <div class="release-row-main">
-
-                <h3>
-                    WANJAGALA
-                </h3>
-
-                <p>
-                    Gospel Single
-                </p>
-
-            </div>
-
-
-            <div class="release-row-year">
-                2025
-            </div>
-
-
-        </article>
-
-
-        <!-- FUTURE RELEASE PLACEHOLDER -->
-
-        <article class="release-row release-row-placeholder">
-
-            <div class="release-row-number">
-                04
-            </div>
-
-
-            <div class="release-row-art">
-
-                <div>
-                    +
-                </div>
-
-            </div>
-
-
-            <div class="release-row-main">
-
-                <h3>
-                    MORE MUSIC
-                </h3>
-
-                <p>
-                    Coming soon
-                </p>
-
-            </div>
-
-
-            <div class="release-row-year">
-                —
-            </div>
-
-
-            
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     LISTEN EVERYWHERE
-===================================================== -->
-
-<section class="platform-section">
-
-    <div class="platform-background">
-        LISTEN
-    </div>
-
-
-    <div class="platform-content">
-
-        <div class="eyebrow">
-            WHERE TO LISTEN
-        </div>
-
-
-        <h2>
-            TAKE THE
-            <span>SOUND</span>
-            WITH YOU.
-        </h2>
-
-
-        <p>
-            Discover Giovanni's music across your
-            favourite streaming and video platforms.
-        </p>
-
-
-        <div class="platform-grid">
-
-            <a
-                href="#"
-                class="platform-card"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <span class="platform-number">
-                    01
-                </span>
-
-                <strong>
-                    YOUTUBE
-                </strong>
-
-                <small>
-                    MUSIC & VIDEOS
-                </small>
-
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <a href="index.html" class="footer-brand">
+                <span class="footer-symbol">G</span>
+                <span>DEEJAY<br>GIOVANNI</span>
             </a>
 
-
-            <a
-                href="#"
-                class="platform-card"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <span class="platform-number">
-                    02
-                </span>
-
-                <strong>
-                    AUDIOMACK
-                </strong>
-
-                <small>
-                    LISTEN
-                </small>
-
-
-            </a>
-
-
-            <a
-                href="#"
-                class="platform-card"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <span class="platform-number">
-                    03
-                </span>
-
-                <strong>
-                    SPOTIFY
-                </strong>
-
-                <small>
-                    STREAM
-                </small>
-
-            </a>
-
-
-            <a
-                href="#"
-                class="platform-card"
-                target="_blank"
-                rel="noopener"
-            >
-
-                <span class="platform-number">
-                    04
-                </span>
-
-                <strong>
-                    APPLE MUSIC
-                </strong>
-
-                <small>
-                    STREAM
-                </small>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     MUSIC / VIDEO CONNECTION
-===================================================== -->
-
-<section class="music-video-section">
-
-    <div class="music-video-copy">
-
-        <div class="eyebrow">
-            MUSIC IN MOTION
-        </div>
-
-
-        <h2>
-            HEAR
-            <br>
-            <span>THE SOUND.</span>
-        </h2>
-
-
-        <p>
-            The music doesn't stop when the track ends.
-            Explore performances, visual stories and
-            moments from Giovanni's world.
-        </p>
-
-    </div>
-
-
-    <a href="videos.html" class="music-video-card">
-
-        <div class="music-video-placeholder">
-
-            <span>
-                PLAY
-            </span>
-
-        </div>
-
-
-        <div class="music-video-card-overlay"></div>
-
-
-        <div class="music-video-play">
-            ▶
-        </div>
-
-
-        <div class="music-video-label">
-            LATEST VIDEO
-        </div>
-
-
-    </a>
-
-</section>
-
-
-<!-- =====================================================
-     BOOKING CTA
-===================================================== -->
-
-<section class="music-booking">
-
-    <div class="music-booking-bg">
-        BOOK
-    </div>
-
-
-    <div class="music-booking-content">
-
-        <div class="eyebrow">
-            BRING THE SOUND
-        </div>
-
-
-        <h2>
-            MAKE IT
-            <span>LIVE.</span>
-        </h2>
-
-
-        <p>
-            Looking for a gospel DJ, live performer or
-            Christian artist for your next event?
-        </p>
-
-
-        <a href="booking.html" class="giant-button">
-
-            <span>
-                BOOK
-                <br>
-                GIOVANNI
-            </span>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <div class="footer-top">
-
-        <div class="footer-brand">
-
-            <span class="footer-symbol">
-                G
-            </span>
-
-            <div>
-                DEEJAY
-                <br>
-                GIOVANNI
+            <div class="footer-navigation">
+                <a href="index.html">Home</a>
+                <a href="music.html" aria-current="page">Music</a>
+                <a href="mixes.html">Mixes</a>
+                <a href="about.html">Story</a>
+                <a href="booking.html">Get In Touch</a>
             </div>
 
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/deejay_giovanni/" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.youtube.com/@deejaygiovanniug/" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.tiktok.com/@deejaygiovanni/" target="_blank" rel="noopener">TikTok</a>
+                <a href="https://x.com/DeejaGiovanni" target="_blank" rel="noopener">X</a>
+            </div>
         </div>
 
-
-        <div class="footer-navigation">
-
-            <a href="music.html">Music</a>
-            <a href="mixes.html">Mixes</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">Story</a>
-            <a href="booking.html">Booking</a>
-
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> DEEJAY GIOVANNI</span>
+            <span>SOUND WITH PURPOSE.</span>
         </div>
+    </footer>
 
-
-        <div class="footer-socials">
-
-            <a href="#" target="_blank" rel="noopener">
-                Instagram ↗
-            </a>
-
-            <a href="#" target="_blank" rel="noopener">
-                YouTube ↗
-            </a>
-
-            <a href="#" target="_blank" rel="noopener">
-                TikTok ↗
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            © <span id="year"></span> DEEJAY GIOVANNI
-        </span>
-
-        <span>
-            UGANDA / EAST AFRICA
-        </span>
-
-        <span>
-            SOUND WITH PURPOSE.
-        </span>
-
-    </div>
-
-</footer>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="script.js"></script>
-<script src="music.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>

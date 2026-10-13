@@ -1,0 +1,707 @@
+/* =========================================================
+   DEEJAY GIOVANNI — CONTACT PAGE
+   Cinematic / Editorial / Direct Contact
+========================================================= */
+
+.contact-page {
+    --contact-bg: #0b0a09;
+    --contact-panel: #12110f;
+    --contact-panel-hover: #191713;
+    --contact-text: #f3e8d5;
+    --contact-muted: #999187;
+    --contact-gold: #c8a76b;
+    --contact-line: rgba(243, 232, 213, 0.13);
+
+    margin: 0;
+    min-height: 100vh;
+    background: var(--contact-bg);
+    color: var(--contact-text);
+    font-family: "Manrope", sans-serif;
+}
+
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+    box-sizing: border-box;
+}
+
+.contact-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-page a:focus-visible {
+    outline: 2px solid var(--contact-gold);
+    outline-offset: 5px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.contact-nav {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    min-height: 92px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid var(--contact-line);
+    background: rgba(11, 10, 9, 0.92);
+}
+
+.contact-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.logo-mark {
+    display: grid;
+    place-items: center;
+    width: 43px;
+    height: 43px;
+    border: 1px solid rgba(200, 167, 107, 0.7);
+    color: var(--contact-gold);
+    font-family: "Gilda Display", serif;
+    font-size: 17px;
+}
+
+.logo-name {
+    font-family: "Manrope", sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+}
+
+.contact-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(22px, 3vw, 45px);
+}
+
+.contact-nav-links a {
+    color: #c1b9ac;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    transition: color 0.3s ease;
+}
+
+.contact-nav-links a:hover {
+    color: var(--contact-gold);
+}
+
+.nav-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--contact-muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--contact-gold);
+    box-shadow: 0 0 12px rgba(200, 167, 107, 0.45);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.contact-main {
+    width: min(1120px, 86%);
+    margin: 0 auto;
+    padding: 48px 0 0;
+}
+
+.contact-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--contact-line);
+    color: var(--contact-gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.topline-number {
+    color: var(--contact-muted);
+    letter-spacing: 0.1em;
+}
+
+.contact-intro {
+    max-width: 700px;
+    padding: 58px 0 48px;
+}
+
+.contact-eyebrow {
+    margin: 0 0 18px;
+    color: var(--contact-gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.contact-intro h1 {
+    margin: 0;
+    font-family: "Gilda Display", Georgia, serif;
+    font-size: clamp(72px, 10vw, 132px);
+    font-weight: 400;
+    line-height: 0.78;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px var(--contact-text);
+}
+
+.contact-intro h1 span {
+    display: inline-block;
+    margin-top: 12px;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.2px var(--contact-gold);
+}
+
+.contact-description {
+    max-width: 410px;
+    margin: 30px 0 0;
+    color: var(--contact-muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTACT CARDS
+========================================================= */
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.contact-option {
+    position: relative;
+    min-width: 0;
+    min-height: 310px;
+    padding: 25px 23px 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    border: 1px solid var(--contact-line);
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(200, 167, 107, 0.075),
+            transparent 45%
+        ),
+        var(--contact-panel);
+
+    transition:
+        background 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.contact-option::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--contact-gold);
+    transition: width 0.4s ease;
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+    border-color: rgba(200, 167, 107, 0.48);
+    background-color: var(--contact-panel-hover);
+}
+
+.contact-option:hover::before {
+    width: 100%;
+}
+
+.contact-option-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-icon {
+    width: 61px;
+    height: 61px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+
+    border: 1px solid rgba(200, 167, 107, 0.35);
+    border-radius: 50%;
+    background: rgba(200, 167, 107, 0.07);
+
+    color: var(--contact-gold);
+    font-size: 27px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.contact-option:hover .contact-icon {
+    transform: scale(1.06);
+    background: var(--contact-gold);
+    color: #0b0a09;
+}
+
+.contact-arrow {
+    color: #766e60;
+    font-size: 13px;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.contact-option:hover .contact-arrow {
+    color: var(--contact-gold);
+    transform: translate(3px, -3px);
+}
+
+.contact-option-label {
+    display: block;
+    margin-bottom: 13px;
+    color: var(--contact-gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.contact-option-bottom h2 {
+    margin: 0;
+    font-family: "Gilda Display", Georgia, serif;
+    font-size: clamp(27px, 2.8vw, 39px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--contact-text);
+}
+
+.contact-option-bottom h2 span {
+    color: var(--contact-gold);
+}
+
+.contact-option-bottom p {
+    min-height: 42px;
+    margin: 12px 0 25px;
+    color: var(--contact-muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.contact-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--contact-text);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+}
+
+.contact-action i {
+    color: var(--contact-gold);
+    transition: transform 0.3s ease;
+}
+
+.contact-option:hover .contact-action i {
+    transform: translateX(5px);
+}
+
+
+/* Recognizable WhatsApp brand green */
+.whatsapp-icon {
+    color: #25D366;
+    border-color: rgba(37, 211, 102, 0.35);
+    background: rgba(37, 211, 102, 0.07);
+}
+
+.whatsapp-option:hover .whatsapp-icon {
+    color: #07190d;
+    border-color: #25D366;
+    background: #25D366;
+}
+
+/* Email */
+.email-icon {
+    color: #e7c58a;
+}
+
+/* Call */
+.phone-icon {
+    color: #f0e7d8;
+}
+
+
+/* =========================================================
+   CLOSING LINE
+========================================================= */
+
+.contact-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.contact-bottom p {
+    margin: 0;
+    color: var(--contact-muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contact-bottom p span {
+    color: var(--contact-gold);
+}
+
+.contact-bottom-line {
+    width: 48px;
+    height: 1px;
+    flex-shrink: 0;
+    background: var(--contact-line);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.contact-footer {
+    min-height: 85px;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid var(--contact-line);
+}
+
+.footer-brand {
+    font-family: "Gilda Display", serif;
+    font-size: 26px;
+}
+
+.footer-brand span {
+    color: var(--contact-gold);
+}
+
+.contact-footer p {
+    margin: 0;
+    color: var(--contact-muted);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--contact-text);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.back-home i {
+    color: var(--contact-gold);
+}
+
+.back-home:hover {
+    color: var(--contact-gold);
+}
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 900px) {
+    .contact-nav {
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    .contact-nav-links {
+        gap: 18px;
+    }
+
+    .nav-status {
+        font-size: 8px;
+        letter-spacing: 0.06em;
+    }
+
+    .contact-main {
+        width: 90%;
+    }
+
+    .contact-options {
+        gap: 10px;
+    }
+
+    .contact-option {
+        min-height: 300px;
+        padding: 21px 17px;
+    }
+
+    .contact-icon {
+        width: 54px;
+        height: 54px;
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+    .contact-nav {
+        min-height: 76px;
+        padding: 0 6%;
+        gap: 12px;
+    }
+
+    .logo-mark {
+        width: 37px;
+        height: 37px;
+        font-size: 15px;
+    }
+
+    .logo-name {
+        font-size: 8px;
+    }
+
+    .contact-nav-links {
+        gap: 15px;
+    }
+
+    .contact-nav-links a {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .contact-nav-links a:nth-child(3) {
+        display: none;
+    }
+
+    .nav-status {
+        display: none;
+    }
+
+    .contact-main {
+        width: 88%;
+        padding-top: 30px;
+    }
+
+    .contact-topline {
+        font-size: 8px;
+    }
+
+    .contact-intro {
+        padding: 47px 0 34px;
+    }
+
+    .contact-eyebrow {
+        margin-bottom: 20px;
+        font-size: 9px;
+    }
+
+    .contact-intro h1 {
+        font-size: clamp(76px, 17vw, 108px);
+        line-height: 0.8;
+        letter-spacing: -0.05em;
+    }
+
+    .contact-intro h1 span {
+        margin-top: 10px;
+    }
+
+    .contact-description {
+        max-width: 330px;
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-option {
+        min-height: 0;
+        padding: 21px;
+        display: grid;
+        grid-template-columns: 64px minmax(0, 1fr);
+        align-items: start;
+        gap: 17px;
+    }
+
+    .contact-option-top {
+        display: block;
+    }
+
+    .contact-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 25px;
+    }
+
+    .contact-arrow {
+        display: none;
+    }
+
+    .contact-option-bottom {
+        min-width: 0;
+    }
+
+    .contact-option-label {
+        margin: 3px 0 9px;
+        font-size: 8px;
+    }
+
+    .contact-option-bottom h2 {
+        font-size: 32px;
+    }
+
+    .contact-option-bottom p {
+        min-height: 0;
+        margin: 9px 0 18px;
+        font-size: 11px;
+    }
+
+    .contact-action {
+        font-size: 8px;
+        letter-spacing: 0.08em;
+    }
+
+    .contact-bottom {
+        gap: 12px;
+        padding: 36px 0;
+    }
+
+    .contact-bottom-line {
+        width: 20px;
+    }
+
+    .contact-bottom p {
+        max-width: 240px;
+        font-size: 8px;
+    }
+
+    .contact-footer {
+        min-height: 76px;
+        padding: 18px 6%;
+        gap: 12px;
+    }
+
+    .footer-brand {
+        font-size: 22px;
+    }
+
+    .contact-footer p {
+        font-size: 8px;
+        letter-spacing: 0.04em;
+        text-align: center;
+    }
+
+    .back-home {
+        gap: 6px;
+        font-size: 8px;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+    .contact-nav {
+        padding: 0 4%;
+    }
+
+    .contact-nav-links {
+        gap: 11px;
+    }
+
+    .contact-main {
+        width: 90%;
+    }
+
+    .contact-option {
+        grid-template-columns: 49px minmax(0, 1fr);
+        gap: 13px;
+        padding: 17px 14px;
+    }
+
+    .contact-icon {
+        width: 47px;
+        height: 47px;
+        font-size: 21px;
+    }
+
+    .contact-option-bottom h2 {
+        font-size: 28px;
+    }
+
+    .contact-footer {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+}
+
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .contact-page *,
+    .contact-page *::before,
+    .contact-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
